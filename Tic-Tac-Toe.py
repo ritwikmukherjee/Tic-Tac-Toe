@@ -45,9 +45,8 @@ def player_choice(board,player_marker):
         
 def replay():
     result=input('Play Again?')
-    if result == 'Yes' or result == 'yes' or result == 'YES':
-        board=[' ']*10        
-        tic_tac_toe(board)
+    if result == 'Yes' or result == 'yes' or result == 'YES':      
+        tic_tac_toe()
     elif result == 'No' or result == 'no' or result == 'NO':
         exit()
     else: 
@@ -84,7 +83,8 @@ def play(board,player1_marker,player2_marker,flag):
     else:
         display_board(board)
         
-def tic_tac_toe(board):
+def tic_tac_toe(): 
+    board=[' ']*10 
     display_board(board)
     print('Welcome! Ready for a game of Tic-Tac-Toe?')
     (player1_marker,player2_marker)=player_input()
