@@ -84,7 +84,7 @@ def play(board,player1_marker,player2_marker,flag):
         display_board(board)
         
 def tic_tac_toe(): 
-    board=[' ']*10 
+    board=[' ', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     display_board(board)
     print('Welcome! Ready for a game of Tic-Tac-Toe?')
     (player1_marker,player2_marker)=player_input()
